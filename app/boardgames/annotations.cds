@@ -1,0 +1,1 @@
+using BoardGamesHandler as service from '../../srv/cat-service';
