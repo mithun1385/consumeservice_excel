@@ -10,8 +10,7 @@ sap.ui.define([
         opaTest("Start application", function (Given, When, Then) {
             Given.iStartMyApp();
 
-            Then.onTheFilesList.iSeeThisPage();
-            Then.onTheFilesList.onTable().iCheckColumns(3, {"fileNames":{"header":"fileNames"},"fileType":{"header":"fileType"},"content":{"header":"content"}});
+            Then.onTheBoardGamesList.iSeeThisPage();
 
         });
 
@@ -19,12 +18,12 @@ sap.ui.define([
         opaTest("Navigate to ObjectPage", function (Given, When, Then) {
             // Note: this test will fail if the ListReport page doesn't show any data
             
-            When.onTheFilesList.onFilterBar().iExecuteSearch();
+            When.onTheBoardGamesList.onFilterBar().iExecuteSearch();
             
-            Then.onTheFilesList.onTable().iCheckRows();
+            Then.onTheBoardGamesList.onTable().iCheckRows();
 
-            When.onTheFilesList.onTable().iPressRow(0);
-            Then.onTheFilesObjectPage.iSeeThisPage();
+            When.onTheBoardGamesList.onTable().iPressRow(0);
+            Then.onTheBoardGamesObjectPage.iSeeThisPage();
 
         });
 

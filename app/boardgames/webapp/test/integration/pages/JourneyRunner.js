@@ -1,15 +1,15 @@
 sap.ui.define([
     "sap/fe/test/JourneyRunner",
-	"boardgames/test/integration/pages/FilesList",
-	"boardgames/test/integration/pages/FilesObjectPage"
-], function (JourneyRunner, FilesList, FilesObjectPage) {
+	"boardgames/test/integration/pages/BoardGamesList",
+	"boardgames/test/integration/pages/BoardGamesObjectPage"
+], function (JourneyRunner, BoardGamesList, BoardGamesObjectPage) {
     'use strict';
 
     var runner = new JourneyRunner({
-        launchUrl: sap.ui.require.toUrl('boardgames') + '/test/flpSandbox.html#boardgames-tile',
+        launchUrl: sap.ui.require.toUrl('boardgames') + '/test/flp.html#app-preview',
         pages: {
-			onTheFilesList: FilesList,
-			onTheFilesObjectPage: FilesObjectPage
+			onTheBoardGamesList: BoardGamesList,
+			onTheBoardGamesObjectPage: BoardGamesObjectPage
         },
         async: true
     });

@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
-      "version": "1.20.3",
-      "toolsId": "9eed6d9a-d502-483b-a3be-4a59b31426ca"
+      "version": "1.20.4",
+      "toolsId": "f42b81d0-44a4-4978-a651-43cf80170b4b"
     },
     "dataSources": {
       "mainService": {
@@ -85,28 +85,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "FilesList",
-          "target": "FilesList"
+          "name": "BoardGamesList",
+          "target": "BoardGamesList"
         },
         {
-          "pattern": "Files({key}):?query:",
-          "name": "FilesObjectPage",
-          "target": "FilesObjectPage"
+          "pattern": "BoardGames({key}):?query:",
+          "name": "BoardGamesObjectPage",
+          "target": "BoardGamesObjectPage"
         }
       ],
       "targets": {
-        "FilesList": {
+        "BoardGamesList": {
           "type": "Component",
-          "id": "FilesList",
+          "id": "BoardGamesList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Files",
+              "contextPath": "/BoardGames",
               "variantManagement": "Page",
               "navigation": {
-                "Files": {
+                "BoardGames": {
                   "detail": {
-                    "route": "FilesObjectPage"
+                    "route": "BoardGamesObjectPage"
                   }
                 }
               },
@@ -120,14 +120,14 @@
             }
           }
         },
-        "FilesObjectPage": {
+        "BoardGamesObjectPage": {
           "type": "Component",
-          "id": "FilesObjectPage",
+          "id": "BoardGamesObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Files"
+              "contextPath": "/BoardGames"
             }
           }
         }

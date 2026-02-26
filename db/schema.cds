@@ -3,6 +3,7 @@ namespace bg;
 using {cuid} from '@sap/cds/common';
 
 entity BoardGames : cuid {
+  
 
   name            : String(120);
   price           : Decimal(15, 2);

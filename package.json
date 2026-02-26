@@ -33,6 +33,8 @@
   "sapux": [
     "app/file-upload",
     "app/file-upload",
+    "app/boardgames",
+    "app/boardgames",
     "app/boardgames"
   ]
 }

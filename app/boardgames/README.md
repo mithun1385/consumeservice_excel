@@ -1,9 +1,9 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Wed Feb 25 2026 15:56:23 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Thu Feb 26 2026 17:40:38 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.20.3|
+|**App Generator Version**<br>1.20.4|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local CAP|
@@ -15,7 +15,7 @@
 |**UI5 Version**<br>1.145.0|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
-|**Main Entity**<br>Files|
+|**Main Entity**<br>BoardGames|
 
 ## boardgames
 

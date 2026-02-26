@@ -1,7 +1,7 @@
 const cds = require('@sap/cds')
 const readXlsFile = require('read-excel-file/node')
 
-module.exports = class AttachmentHandler extends cds.ApplicationService {
+module.exports = class BoardGamesHandler extends cds.ApplicationService {
   init() {
 
     const { BoardGames, Files } = this.entities;
@@ -14,7 +14,7 @@ module.exports = class AttachmentHandler extends cds.ApplicationService {
       const buffer = Buffer.concat(chunks)
       const rows = await readXlsFile(buffer);
       const [header, ...body] = rows;
-
+    
       const entries = body.map(([name, price, players, playTimeMinutes, ageRating]) => ({
         name,
         price: Number(price) * 2,
