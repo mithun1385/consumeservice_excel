@@ -13,6 +13,7 @@ module.exports = class BoardGamesHandler extends cds.ApplicationService {
       
       const buffer = Buffer.concat(chunks)
       const rows = await readXlsFile(buffer);
+      console.log(rows)
       const [header, ...body] = rows;
     
       const entries = body.map(([name, price, players, playTimeMinutes, ageRating]) => ({
@@ -22,6 +23,7 @@ module.exports = class BoardGamesHandler extends cds.ApplicationService {
         playTimeMinutes: Number(playTimeMinutes),
         ageRating
       }));
+
 
       for (const entry of entries)
         await INSERT.into(BoardGames).entries(entry);
